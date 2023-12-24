@@ -195,7 +195,6 @@ def main():
 
         log_config = get_log_config(filename="rest_api_log_config.toml")
 
-        # If no toml, try loading yaml
         if log_config is None:
             log_config = get_log_config(filename="rest_api_log_config.yaml")
 
