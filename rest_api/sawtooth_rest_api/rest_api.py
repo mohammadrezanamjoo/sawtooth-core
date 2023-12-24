@@ -246,7 +246,6 @@ def main():
             int(rest_api_config.timeout),
             wrapped_registry,
             client_max_size=rest_api_config.client_max_size)
-        # pylint: disable=broad-except
     except Exception as e:
         LOGGER.exception(e)
         sys.exit(1)
